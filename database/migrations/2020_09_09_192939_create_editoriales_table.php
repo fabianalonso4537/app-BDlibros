@@ -15,6 +15,7 @@ class CreateEditorialesTable extends Migration
     {
         Schema::create('editoriales', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('nombre');
             $table->timestamps();
         });
     }
