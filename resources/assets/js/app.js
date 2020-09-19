@@ -1,4 +1,3 @@
-
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -21,6 +20,11 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('categoria', require('./components/categoria.vue').default);
+Vue.component('Paises', require('./components/Paises.vue').default);
+Vue.component('autores', require('./components/autores.vue').default);
+Vue.component('editoriales', require('./components/editoriales.vue').default);
+Vue.component('idioma', require('./components/idioma.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -29,5 +33,8 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  */
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    data: {
+        menu: 0
+    }
 });

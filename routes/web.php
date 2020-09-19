@@ -12,5 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('principal');
+    return view('contenido/contenido');
 });
+Route::get('categorias','Categoriacontroller@index');
+Route::get('paises','Paiscontroller@index');
+Route::get('autores','Autorcontroller@index');
+Route::get('editorial','Editorialcontroller@index');
+Route::get('idioma','Idiomacontroller@index');
